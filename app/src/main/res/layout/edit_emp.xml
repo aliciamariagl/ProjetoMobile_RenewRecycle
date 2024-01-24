@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plant_menu"
+        tools:context=".EditEmp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_back"
+            android:alpha="0.5"></RelativeLayout>
+
+        <View
+            android:id="@+id/ContainerComponents"
+            style="@style/ContainerComponentsEdit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="107dp"
+            android:layout_height="87dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintTop_toTopOf="@id/ContainerComponents" />
+
+        <!-- Elementos específicos para o modo Usuário -->
+        <EditText
+            android:id="@+id/NomeCompany"
+            style="@style/EditTextEmp"
+            android:hint="Nome da Empresa"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+        <EditText
+            android:id="@+id/EmailCompany"
+            style="@style/EditText_EditUser"
+            android:hint="E-mail Empresarial"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/NomeCompany"/>
+
+        <EditText
+            android:id="@+id/CelularCompany"
+            style="@style/EditText_EditUser"
+            android:hint="Número de Contato da Empresa"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/EmailCompany"/>
+
+        <EditText
+            android:id="@+id/AddressCompany"
+            style="@style/EditText_EditUser"
+            android:hint="Endereço Empresarial"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/CelularCompany"/>
+
+        <EditText
+            android:id="@+id/SenhaCompany"
+            style="@style/EditText_EditUser"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/AddressCompany"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSalvar"
+            style="@style/Button"
+            android:text="Salvar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/SenhaCompany"
+            />
+
+        <TextView
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Voltar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSalvar" />
+
+        <Button
+            android:id="@+id/btnDeletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:backgroundTint="@color/red"
+            android:text="Deletar conta"
+            app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@id/ContainerComponents"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

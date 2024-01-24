@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RenewRecycle_Projeto</string>
+    <string name="Cadastrar">Ainda não tem conta? Cadastre-se aqui</string>
+    <string name="Empresa">Entrar com conta empresarial</string>
+    <string name="PessoaFisica">Entrar com conta pessoal</string>
+    <string name="BtnExit">Deseja sair?</string>
+    <string name="BtnEdit">Editar</string>
+    <string name="BtnHome">Tela Inicial</string>
+    <string name="BtnMap">Mapa</string>
+    <string name="BtnHistory">Histórico de Transações</string>
+    <string name="PerfilUser">Perfil do Usuário: Nome</string>
+    <string name="EmailUser">Perfil do Usuário: E-mail</string>
+    <string name="ExPerfil">Alícia Maria Gualberto Lima</string>
+    <string name="ExEmail">aliciamaria@gmail.com</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="title_activity_map_emp">MapEmp</string>
+    <string name="title_activity_map_user">MapUser</string>
+</resources>

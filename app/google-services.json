@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401971992544",
+    "project_id": "renewrecycle-59674",
+    "storage_bucket": "renewrecycle-59674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401971992544:android:13b8dc2ee3fa0419b43d85",
+        "android_client_info": {
+          "package_name": "com.example.renewrecycle_projeto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC02xNShBpEq7Lo20V3ntFgfgY1TslNT98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
